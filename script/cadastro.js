@@ -20,7 +20,6 @@ function mascaraDeTelefone(telefone){
 
         }
 
-    
 }
 
 function mascaraDeCEP(cep) {

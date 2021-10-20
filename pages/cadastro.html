@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../style/style-cadastro.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../style/menu.css">
+    <title>Ferramentaria - Cadastro</title>
+</head>
+<body>
+    <nav>
+        <div class="topnav" id="myTopnav">
+            <a href="./../index.html">Ferramentaria</a>
+            <a href="./cadastro.html" class="active">Cadastre-se</a>
+            <a href="./login.html">Login</a>
+            <a href="./pesquisa.html">Busque uma ferramenta</a>
+            <a href="./sobre.html">Sobre Nós</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </nav>
+    <main>
+        <section>
+            <form action="#" method="POST">
+                <h1>Cadastre-se para acessar o sistema</h1>
+                <fieldset>
+                    <div class="container half-box">
+                        
+                        <input type="text" required name="nome" autofocus>
+                        <label for="nome">Nome</label>
+                    </div>
+                    <div class="container half-box">
+                        
+                        <input type="text" required name="sobrenome">
+                        <label for="sobrenome">Sobrenome</label>
+                    </div>
+                </fieldset>
+    
+                <fieldset>
+                    <div class="container half-box">
+                        
+                        <input type="email" required name="email">
+                        <label>E-mail</label>
+                    </div>
+                    <div class="container half-box">
+                        
+                        <input type="text" required name="telefone" onblur="tiraHifen(this);mascaraDeTelefone(this)">
+                        <label>Contato</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div class="container one-quarters-box">
+                        <input type="text" required name="CEP" id="CEP" onblur="tiraHifen(this);mascaraDeCEP(this)">
+                        <label>CEP</label>
+                    </div>
+                    <div class="container three-quarters-box">
+                        
+                        <input type="text" required name="rua">
+                        <label>Rua</label>
+                        
+                    </div>
+                </fieldset>
+    
+                <fieldset>
+                    <div class="container one-quarters-box">
+                        <input type="number" required name="numero" min="1">
+                        <label>Nº</label>
+        
+                    </div>
+        
+                    <div class="container three-quarters-box">
+                        <input type="text" required name="complemento">
+                        <label>Complemento</label>
+                    </div>
+                </fieldset>
+    
+                <fieldset>
+                    <div class="container half-box">
+                        <input type="text" name="cidade" required>
+                        <label>Cidade</label>
+                    </div>
+        
+                    <div class="container half-one-quarters-box">
+                        <select name="estado" required>
+                            <option value=""></option>
+                            <option value="SP">SP</option>
+                            <option value="PI">PI</option>
+                            <option value="RJ">RJ</option>
+                            <option value="BA">BA</option>
+                            <option value="PE">PE</option>
+                            <option value="AC">AC</option>
+                        </select> 
+                        <label>UF</label>  
+                    </div>
+        
+                    <div class="container one-quarters-box">
+                        
+                        <input type="text" name="pais" required value="Brasil">
+                        <label for="pais">País</label>
+                    </div>
+                </fieldset>
+    
+                <fieldset>
+                    <div class="container half-box">
+                        
+                        <input type="password" required name="password">
+                        <label for="password">Senha</label>
+                    </div>
+                    <div class="container half-box">
+                       
+                        <input type="password" required name="confirm">
+                        <label for="confirm">Confirmar senha</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div id="check">
+                        <input type="checkbox" required name="accept">
+                        <label for="accept">Aceitar os termos de uso</label>
+    
+                    </div>
+    
+                    <button>Criar conta</button>
+                </fieldset>
+                <a class="termos-uso" href="#"> termos de uso</a>
+            </form>
+        </section>
+    </main>
+
+    <script src="../script/menu.js"></script>
+    <script src="../script/scripts-cadastro.js"></script>
+
+</body>
+</html>

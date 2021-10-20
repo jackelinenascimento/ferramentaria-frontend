@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../style/menu.css">
+    <link rel="stylesheet" href="../style/pesquisa.css">
     <title>Ferramentaria - Pesquisar</title>
 </head>
 <body>
@@ -21,6 +22,33 @@
             </a>
         </div>
     </nav>
+    <main class="container">
+        <section class="menu-busca">
+            <div class="principal">
+                <img src="../img/logo.jpg" alt="logo da Ferramentaria">
+                <h1>Qual ferramenta você está procurando?</h1>
+            </div>
+            <div class="busca">
+                <input>
+                <select name="tensao" id="tensao" title="Selecione a tensão (opcional)">
+                    <option value="0" selected disabled>Qual tensão?</option>
+                    <option value="0">Todas</option>
+                    <option value="1">110V</option>
+                    <option value="2">220V</option>
+                </select>
+                <select name="modalidade" id="modalidade" title="Selecione a modalidade (opcional)">
+                    <option value="0" selected disabled>Qual modalidade?</option>
+                    <option value="0">Todas</option>
+                    <option value="1">Doméstica</option>
+                    <option value="2">Industrial</option>
+                </select>
+                <button class="btn-primary" id="btn_buscar">Buscar</i></button>
+            </div>
+        </section>
+        <section>
+            <div id="resultado-pesquisa"></div>
+        </section>
+    </main>
     <script src="../script/menu.js"></script>
 </body>
 </html>

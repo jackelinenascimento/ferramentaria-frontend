@@ -4,5 +4,14 @@
 }
 
 .logo{
-    width: 250px;
+    width: 200px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .logo {
+        margin: 0;
+        padding: 0;
+        width: 40%;
+    }
 }

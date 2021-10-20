@@ -15,3 +15,17 @@
         width: 40%;
     }
 }
+
+#resultado-pesquisa{
+    width: 100%;
+    margin: 20px;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+}
+
+.card{
+    margin: 10px;
+}

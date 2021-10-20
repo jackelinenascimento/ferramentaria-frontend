@@ -1,4 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+    color: #323232;  
+}
+
 .btn-primary{
+    min-width: 100px;
     font-size: .8rem;
     text-decoration: none;
     text-align: center;
@@ -15,6 +24,6 @@
 }
 
 .btn-primary:hover{
-    background-color: #00008B;
+    background-color: #042452;
     transition: .5s;
 }

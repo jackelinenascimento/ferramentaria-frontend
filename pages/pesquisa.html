@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../style/menu.css">
     <link rel="stylesheet" href="../style/commons.css">
@@ -26,30 +27,113 @@
     <main class="container">
         <section class="menu-busca">
             <div class="principal">
-                <img class="logo" src="../img/logo.jpg" alt="logo da Ferramentaria">
-                <h1>Qual ferramenta você está procurando?</h1>
+                <h2 style="margin-top: 20px;">Qual ferramenta você está procurando?</h1>
             </div>
             <div class="busca">
                 <input>
-                <select name="tensao" id="tensao" title="Selecione a tensão (opcional)">
+                <select style="margin: 20px;" name="tensao" id="tensao" title="Selecione a tensão (opcional)">
                     <option value="0" selected disabled>Qual tensão?</option>
                     <option value="0">Todas</option>
                     <option value="1">110V</option>
                     <option value="2">220V</option>
                 </select>
-                <select name="modalidade" id="modalidade" title="Selecione a modalidade (opcional)">
+                <select style="margin: 20px;" name="modalidade" id="modalidade" title="Selecione a modalidade (opcional)">
                     <option value="0" selected disabled>Qual modalidade?</option>
                     <option value="0">Todas</option>
                     <option value="1">Doméstica</option>
                     <option value="2">Industrial</option>
                 </select>
-                <button class="btn-primary" id="btn_buscar">Buscar</i></button>
+                <button style="margin: 20px;" class="btn-primary" id="btn_buscar">Buscar</i></button>
             </div>
         </section>
         <section>
-            <div id="resultado-pesquisa"></div>
+            <div id="resultado-pesquisa">
+                
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../mock/ferramentas/caixaferramenta01.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Caixa de Ferramentas</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Alugue!</a>
+                    </div>
+                  </div>
+                  
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../mock/ferramentas/caixaferramenta02.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Caixa de Ferramentas</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Compre!</a>
+                    </div>
+                  </div>
+                  
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../mock/ferramentas/caixaferramenta03.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Caixa de Ferramentas</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Compre!</a>
+                    </div>
+                  </div>
+                  
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../mock/ferramentas/chavefenda01.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Alugue!</a>
+                    </div>
+                  </div>
+                  
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../mock/ferramentas/chavefenda02.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Alugue!</a>
+                    </div>
+                  </div>
+                  
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../mock/ferramentas/furadeira02.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Compre!</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../mock/ferramentas/furadeira01.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Compre!</a>
+                    </div>
+                  </div>
+                  
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../mock/ferramentas/martelo02.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Alugue!</a>
+                    </div>
+                  </div>
+                  
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../mock/ferramentas/lixadeira02.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Alugue!</a>
+                    </div>
+                  </div>
+            </div>
         </section>
     </main>
     <script src="../script/menu.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>

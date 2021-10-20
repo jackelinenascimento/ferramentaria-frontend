@@ -18,7 +18,6 @@
 
 #resultado-pesquisa{
     width: 100%;
-    margin: 20px;
     display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;

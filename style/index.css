@@ -20,13 +20,11 @@ main{
     .logo {
         margin: 0;
         padding: 0;
-        width: 40%;
+        align-items: center;
     }
 
     .imagem-logo{
-        position: relative;
-        left: 75%;
-        width: 100%;
+        width: 110px;
     }
     
 }

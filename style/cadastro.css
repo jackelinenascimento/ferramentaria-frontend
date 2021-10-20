@@ -42,8 +42,6 @@ fieldset {
     border: none;
 }
 
-
-
 fieldset:nth-child(8){
     display: flex;
     padding: 15px;
@@ -65,8 +63,6 @@ fieldset {
     font-size: 18px;
     font-weight: 700;
     padding: 14px 10px 0 10px;
-
-
 }
 
 .container {
@@ -97,7 +93,7 @@ fieldset {
     
 }
 
-#btn-submit {
+button {
     margin: 40px 0;
     margin-left: 10px;
     width: calc(50% - 10px);

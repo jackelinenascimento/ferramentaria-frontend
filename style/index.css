@@ -62,17 +62,3 @@ h2{
 p{
     margin-bottom: 30px;;
 }
-
-.btn-pesquisa{
-    text-decoration: none;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-    border: none;
-    height: 40px;
-    border-radius: 20px;
-    color: #FFF;
-    background-color: #08558B;
-    cursor: pointer;
-    padding: 15px;
-}

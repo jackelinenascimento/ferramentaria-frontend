@@ -37,7 +37,7 @@ main{
         text-align: center;
     }
     .titulo{
-        margin: 10%;
+        margin: 10px;
     }
     .logo {
         width: 400px;
@@ -45,20 +45,20 @@ main{
     }
 
     .imagem-logo{
-        position: relative;
-        top: 25%;
-        left: 25%;
+
         width: 100%;
         max-width: 200px;
     }
 }
 
 h1{
+    margin: 10px;
     font-size: 1.5em;    
 }
 
 h2{
     font-size: 1em;
+    margin: 10px;
 }
 
 p{

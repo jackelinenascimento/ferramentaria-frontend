@@ -1,5 +1,11 @@
+body{
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+}
+
 .container{
     text-align: center;
+    background-color: #ffffff;
 }
 
 .logo{
@@ -25,4 +31,9 @@
 
 .card{
     margin: 10px;
+}
+
+.principal{
+    padding-top: 20px;
+    margin-top: 5%;
 }

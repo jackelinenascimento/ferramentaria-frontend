@@ -6,7 +6,6 @@
     width: 200px;
 }
 
-
 @media screen and (max-width: 600px) {
     .logo {
         margin: 0;

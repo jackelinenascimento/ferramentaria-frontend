@@ -1,5 +1,12 @@
+body{
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+}
+
 .container{
-    margin: 0 10% 0 10%;
+    background-color: #ffffff;
+    margin: 0px 50px;
+    padding: 50px 10px 50px 10px;
 }
 
 main{

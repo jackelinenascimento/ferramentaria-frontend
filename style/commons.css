@@ -27,3 +27,26 @@
     background-color: #042452;
     transition: .5s;
 }
+
+.btn-secundary{
+    min-width: 100px;
+    font-size: .8rem;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 30px;
+    color: #FFF;
+    background-color: #04AA6D;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.btn-secundary:hover{
+    color: #FFF;
+    background-color: #035f3d;
+    transition: .5s;
+}

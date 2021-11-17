@@ -1,16 +1,13 @@
-body{
-    background-image: url('../img/background.jpg');
-    background-size: cover;
-}
-
 .container{
     background-color: #ffffff;
     margin: 0px 50px;
     padding: 50px 10px 50px 10px;
+    width: 80%;
 }
 
 main{
-    margin-top: 20vh;
+    margin-top: 5vh;
+    text-align: center;
 }
 
 @media screen and (max-width: 600px) {
@@ -26,41 +23,45 @@ main{
     }
 
     .imagem-logo{
-        width: 110px;
+        width: 250px;
     }
     
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 601px) {
     .container{
         display: flex;
-        text-align: center;
+    	justify-content: center;
+    	align-items: center;
     }
-    .titulo{
-        margin: 10px;
-    }
+    
+ 
     .logo {
-        width: 400px;
+        padding-right: 5%;
         text-align: center;
     }
 
     .imagem-logo{
-
-        width: 100%;
+        position: relative;
         max-width: 200px;
     }
 }
 
 h1{
     margin: 10px;
-    font-size: 1.5em;    
+    font-size: 2.5em;
+    color:#04AA6D;  
+    font-weight: bold;  
 }
 
 h2{
-    font-size: 1em;
+    font-size: 1.5em;
     margin: 10px;
+    color: #08558B;
+    font-weight: bold;  
 }
 
 p{
-    margin-bottom: 30px;;
+    margin-bottom: 30px;
+    font-size: 1em;
 }

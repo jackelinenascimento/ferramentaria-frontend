@@ -37,12 +37,11 @@ main{
     
  
     .logo {
-        padding-right: 5%;
         text-align: center;
     }
 
     .imagem-logo{
         position: relative;
-        max-width: 200px;
+        max-width: 300px;
     }
 }

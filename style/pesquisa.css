@@ -1,15 +1,7 @@
-body{
-    background-image: url('../img/background.jpg');
-    background-size: cover;
-}
-
 .container{
     text-align: center;
     background-color: #ffffff;
-}
-
-.logo{
-    width: 200px;
+    flex-direction: column;
 }
 
 @media screen and (max-width: 600px) {

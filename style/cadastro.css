@@ -103,27 +103,6 @@ a:hover {
 
 }
 
-.three-quarters-box {
-    flex: 70%;
-    position: relative;
-}
-
-.one-quarters-box {
-    flex: 1 1 20%;
-    position: relative;
-}
-
-.half-one-quarters-box {
-    flex: 1 1 10%;
-    position: relative;
-}
-
-
-.half-box {
-    flex: 1 1 45%;
-    position: relative;
-}
-
 .spacing {
     margin-right: 2.5%;
 }

@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../style/commons.css">
     <link rel="stylesheet" href="../style/menu.css">
@@ -27,137 +28,134 @@
         </div>
     </nav>
     <main>
-        <section>
-            <form action="#" method="POST">
-                <h1>Cadastre-se</h1>
+        <section class="form">
+            <h1 id="h1" class="h1">Criar conta</h1>
+            <p id="p" class="p">Realize seu cadastro e já comece a publicar suas ferramentas!</p>
+            <form>
                 <fieldset>
-                    <div class="container half-box">
-
-                        <input type="text" required name="nome" autofocus>
-                        <label for="nome">Nome</label>
+                    <div class="container">
+                        <input type="text" name="nome" placeholder="Nome" required autofocus>
                     </div>
-                    <div class="container half-box">
+                </fieldset>
 
-                        <input type="text" required name="sobrenome">
-                        <label for="sobrenome">Sobrenome</label>
+                <fieldset>
+                    <div class="container">
+                        <input type="email" name="email" placeholder="seuemail@email.com" required>
                     </div>
                 </fieldset>
 
                 <fieldset>
                     <div class="container half-box">
-
-                        <input type="email" required name="email">
-                        <label>E-mail</label>
-                    </div>
-                    <div class="container half-box">
-
-                        <input type="text" required name="telefone" onblur="tiraHifen(this);mascaraDeTelefone(this)">
-                        <label>Telefone</label>
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <div class="container one-quarters-box">
-                        <input type="text" required name="CEP" id="CEP" onblur="tiraHifen(this);mascaraDeCEP(this)">
-                        <label>CEP</label>
-                    </div>
-                    <div class="container three-quarters-box">
-
-                        <input type="text" required name="rua">
-                        <label>Rua</label>
-
+                        <input type="text" name="telefone" placeholder="Telefone" required
+                            onblur="tiraHifen(this);mascaraDeTelefone(this)">
                     </div>
                 </fieldset>
 
                 <fieldset>
                     <div class="container one-quarters-box">
-                        <input type="number" required name="numero" min="1">
-                        <label>Nº</label>
-
+                        <input type="text" name="CEP" placeholder="CEP" id="CEP" required
+                            onblur="tiraHifen(this);mascaraDeCEP(this)">
                     </div>
-
                     <div class="container three-quarters-box">
-                        <input type="text" required name="complemento">
-                        <label>Complemento</label>
+                        <input type="text" name="rua" placeholder="Rua" required>
                     </div>
                 </fieldset>
 
                 <fieldset>
                     <div class="container half-box">
-                        <input type="text" name="cidade" required>
-                        <label>Cidade</label>
+                        <input type="text" name="complemento" placeholder="Complemento" required>
+                    </div>
+                    <div class="container half-box">
+                        <input type="text" name="bairro" placeholder="Bairro" required>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="container half-box">
+                        <input type="text" name="cidade" placeholder="Cidade" required>
                     </div>
 
                     <div class="container half-one-quarters-box">
-                        <select name="estado" required>
-                            <option value=""></option>
-                            <option value="SP">SP</option>
-                            <option value="PI">PI</option>
-                            <option value="RJ">RJ</option>
-                            <option value="BA">BA</option>
-                            <option value="PE">PE</option>
-                            <option value="AC">AC</option>
+                        <select id="uf" name="uf" required>
+                            <option value="">UF</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
                         </select>
-                        <label>UF</label>
-                    </div>
-
-                    <div class="container one-quarters-box">
-
-                        <input type="text" name="pais" required value="Brasil">
-                        <label for="pais">País</label>
                     </div>
                 </fieldset>
 
                 <fieldset>
                     <div class="container half-box">
-
-                        <input type="password" required name="password">
-                        <label for="password">Senha</label>
+                        <input type="password" name="password" placeholder="Senha" required> 
                     </div>
                     <div class="container half-box">
-
-                        <input type="password" required name="confirm">
-                        <label for="confirm">Confirmar senha</label>
+                        <input type="password" name="confirm" placeholder="Confirme sua senha" required>
                     </div>
                 </fieldset>
                 <fieldset>
                     <div id="check">
-                        <input type="checkbox" required name="accept">
+                        <input type="checkbox" name="accept" required>
                         <label for="accept">Aceitar os termos de uso</label>
 
                     </div>
 
                     <button class="btn-primary">Criar conta</button>
                 </fieldset>
-                <a class="termos-uso" href="#" data-toggle="modal" data-target="#exampleModalCenter"> termos de uso</a>
+                <a class="termos-uso" href="#" data-toggle="modal" data-target="#modal"> termos de uso</a>
             </form>
         </section>
     </main>
 
     <!-- Modal -->
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+    <div class="modal fade" id="modal" tabindex="-1" role="dialog"
         aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Termos de Uso</h5>
+                    <h5 class="modal-title" id="exampleModalLongTitle"><strong>Termos de Uso</strong></h5>
                 </div>
                 <div class="modal-body">
                     <h6><strong>Condições de utilização</strong></h6>
-                    <p>São os termos e condições que deverão ser observados pelo USUÁRIO na utilização 
-                        do SITE e, principalmente de suas funcionalidades e ferramentas. Ao visitar 
-                        nosso SITE o USUÁRIO declara ter lido e aceitado estes Termos e Condições 
-                        de Uso e das Políticas. O aceite dos Termos e Condições de Uso 
-                        e das Políticas irá implicar no reconhecimento de que o USUÁRIO 
-                        é capaz e responsável por seus atos. Caso o USUÁRIO tenha qualquer dúvida 
-                        sobre os Termos e Condições de Uso e das Políticas, recomendamos que esse 
-                        entre em contato com a Ferramentaria antes de aceitar, estar sujeito e se vincular 
+                    <p>São os termos e condições que deverão ser observados pelo USUÁRIO na utilização
+                        do SITE e, principalmente de suas funcionalidades e ferramentas. Ao visitar
+                        nosso SITE o USUÁRIO declara ter lido e aceitado estes Termos e Condições
+                        de Uso e das Políticas. O aceite dos Termos e Condições de Uso
+                        e das Políticas irá implicar no reconhecimento de que o USUÁRIO
+                        é capaz e responsável por seus atos. Caso o USUÁRIO tenha qualquer dúvida
+                        sobre os Termos e Condições de Uso e das Políticas, recomendamos que esse
+                        entre em contato com a Ferramentaria antes de aceitar, estar sujeito e se vincular
                         aos mesmos.</p>
-                    <p>O USUÁRIO entende que este Termos e Condições de Uso e das Políticas tem a 
-                        natureza jurídica de um contrato e concorda que o Aceite implicará na 
-                        vinculação da FERRAMENTARIA e do USUÁRIO aos seus termos e condições. Dessa forma, 
-                        recomendamos que o USUÁRIO imprima uma cópia destes documentos para 
-                        futura referência. A BRSA enviará avisos de atualizações dos Termos e 
-                        Condições de Uso e das Políticas de por e-mail, mas será dever do USUÁRIO 
+                    <p>O USUÁRIO entende que este Termos e Condições de Uso e das Políticas tem a
+                        natureza jurídica de um contrato e concorda que o Aceite implicará na
+                        vinculação da FERRAMENTARIA e do USUÁRIO aos seus termos e condições. Dessa forma,
+                        recomendamos que o USUÁRIO imprima uma cópia destes documentos para
+                        futura referência. A BRSA enviará avisos de atualizações dos Termos e
+                        Condições de Uso e das Políticas de por e-mail, mas será dever do USUÁRIO
                         manter-se atento a possíveis atualizações, que podem ocorrer a qualquer tempo.</p>
                 </div>
                 <div class="modal-footer">
@@ -167,9 +165,15 @@
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
     <script src="../script/commons.js"></script>
     <script src="../script/menu.js"></script>
     <script src="../script/cadastro.js"></script>

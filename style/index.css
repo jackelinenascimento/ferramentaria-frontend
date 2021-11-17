@@ -46,22 +46,3 @@ main{
         max-width: 200px;
     }
 }
-
-h1{
-    margin: 10px;
-    font-size: 2.5em;
-    color:#04AA6D;  
-    font-weight: bold;  
-}
-
-h2{
-    font-size: 1.5em;
-    margin: 10px;
-    color: #08558B;
-    font-weight: bold;  
-}
-
-p{
-    margin-bottom: 30px;
-    font-size: 1em;
-}

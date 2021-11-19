@@ -34,45 +34,45 @@
             <form>
                 <fieldset>
                     <div class="container">
-                        <input type="text" name="nome" placeholder="Nome" required autofocus>
+                        <input id="nome" type="text" name="nome" placeholder="Nome" required autofocus>
                     </div>
                 </fieldset>
 
                 <fieldset>
                     <div class="container">
-                        <input type="email" name="email" placeholder="seuemail@email.com" required>
+                        <input id="email" type="email" name="email" placeholder="seuemail@email.com" required>
                     </div>
                 </fieldset>
 
                 <fieldset>
                     <div class="container half-box">
-                        <input type="text" name="telefone" placeholder="Telefone" required
+                        <input id="telefone" type="text" name="telefone" placeholder="Telefone" required
                             onblur="tiraHifen(this);mascaraDeTelefone(this)">
                     </div>
                 </fieldset>
 
                 <fieldset>
                     <div class="container one-quarters-box">
-                        <input type="text" name="CEP" placeholder="CEP" id="CEP" required
-                            onblur="tiraHifen(this);mascaraDeCEP(this)">
+                        <input id="cep" type="text" name="CEP" placeholder="CEP" value="" size="10" maxlength="9"
+                        onblur="pesquisacep(this.value);" required>
                     </div>
                     <div class="container three-quarters-box">
-                        <input type="text" name="rua" placeholder="Rua" required>
+                        <input id="logradouro" type="text" name="logradouro" placeholder="Logradouro" required>
                     </div>
                 </fieldset>
 
                 <fieldset>
                     <div class="container half-box">
-                        <input type="text" name="complemento" placeholder="Complemento" required>
+                        <input id="complemento" type="text" name="complemento" placeholder="Complemento" required>
                     </div>
                     <div class="container half-box">
-                        <input type="text" name="bairro" placeholder="Bairro" required>
+                        <input id="bairro" type="text" name="bairro" placeholder="Bairro" required>
                     </div>
                 </fieldset>
 
                 <fieldset>
                     <div class="container half-box">
-                        <input type="text" name="cidade" placeholder="Cidade" required>
+                        <input id="cidade" type="text" name="cidade" placeholder="Cidade" required>
                     </div>
 
                     <div class="container half-one-quarters-box">
@@ -111,10 +111,10 @@
 
                 <fieldset>
                     <div class="container half-box">
-                        <input type="password" name="password" placeholder="Senha" required> 
+                        <input id="senha" type="password" name="password" placeholder="Senha" required> 
                     </div>
                     <div class="container half-box">
-                        <input type="password" name="confirm" placeholder="Confirme sua senha" required>
+                        <input id="confirma-senha" type="password" name="confirm" placeholder="Confirme sua senha" required>
                     </div>
                 </fieldset>
                 <fieldset>
@@ -124,7 +124,7 @@
 
                     </div>
 
-                    <button class="btn-primary">Criar conta</button>
+                    <button id="btn-cria-conta" class="btn-primary">Criar conta</button>
                 </fieldset>
                 <a class="termos-uso" href="#" data-toggle="modal" data-target="#modal"> termos de uso</a>
             </form>

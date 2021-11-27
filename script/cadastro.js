@@ -92,4 +92,4 @@ function pesquisacep(valor) {
     else {
         limpa_formulário_cep();
     }
-};
+}

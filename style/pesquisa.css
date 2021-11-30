@@ -21,6 +21,7 @@
 .card{
     margin: 10px;
     width: 15rem;
+    border: 1px ridge #04AA6D;
 }
 
 .card:hover{

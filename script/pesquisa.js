@@ -46,7 +46,7 @@ const filter = () => {
 
     if(selectFerramenta.value != 0 && selectFerramenta.value != "Todas"){
         jsonFilter = json.filter(ferramenta => ferramenta.titulo === selectFerramenta.value)
-
+        
         if(jsonFilter.length > 0){
             cardSection.innerHTML = "";
             for (let i=0; i<=jsonFilter.length; i++){

@@ -1,0 +1,141 @@
+[{
+    "id" : 1,
+    "img": "caixaferramenta01.jpg",
+    "alt": "imagem da ferramenta",
+    "titulo": "Caixa de Ferramentas",
+    "tensao": "Não se aplica",
+    "modalidade": "Residencial",
+    "descricao": "Caixa de ferramentas completa",
+    "disponibilidade": "Aluguel"
+},
+{
+    "id" : 2,
+    "img": "caixaferramenta02.jpg",
+    "alt": "imagem da ferramenta",
+    "titulo": "Caixa de Ferramentas",
+    "tensao": "Não se aplica",
+    "modalidade": "Residencial",
+    "descricao": "Caixa de ferramentas completa",
+    "disponibilidade": "Venda"
+},
+{
+    "id" : 3,
+    "img": "caixaferramenta03.jpg",
+    "alt": "imagem da ferramenta",
+    "titulo": "Caixa de Ferramentas",
+    "tensao": "Não se aplica",
+    "modalidade": "Residencial",
+    "descricao": "Caixa de ferramentas completa",
+    "disponibilidade": "Venda"
+},
+{
+    "id" : 4,
+    "img": "chavefenda01.jpg",
+    "alt": "imagem da ferramenta",
+    "titulo": "Chave de Fenda",
+    "tensao": "Não se aplica",
+    "modalidade": "Residencial",
+    "descricao": "Coleção de chaves de fenda disponivel para aluguel",
+    "disponibilidade": "Aluguel"
+},
+{
+    "id" : 5,
+    "img": "chavefenda02.jpg",
+    "alt": "imagem da ferramenta",
+    "titulo": "Chave de Fenda",
+    "tensao": "Não se aplica",
+    "modalidade": "Residencial",
+    "descricao": "Coleção de chaves de fenda disponivel para aluguel",
+    "disponibilidade": "Aluguel"
+},
+{
+    "id" : 6,
+    "img": "furadeira01.jpg",
+    "alt": "imagem da ferramenta",
+    "titulo": "Furadeira",
+    "tensao": "110V",
+    "modalidade": "Residencial",
+    "descricao": "Furadeira em otimo estado disponivel para aluguel",
+    "disponibilidade": "Aluguel"
+},
+{
+    "id" : 7,
+    "img": "furadeira02.jpg",
+    "alt": "imagem da ferramenta",
+    "titulo": "Furadeira",
+    "tensao": "220V",
+    "modalidade": "Residencial",
+    "descricao": "Furadeira em otimo estado disponivel para venda",
+    "disponibilidade": "Venda"
+},
+{
+    "id" : 8,
+    "img": "martelo01.jpg",
+    "alt": "imagem da ferramenta",
+    "titulo": "Martelo",
+    "tensao": "Não se aplica",
+    "modalidade": "Residencial",
+    "descricao": "Martelo disponivel para venda",
+    "disponibilidade": "Venda"
+},
+{
+    "id" : 9,
+    "img": "martelo02.jpg",
+    "alt": "imagem da ferramenta",
+    "titulo": "Martelo",
+    "tensao": "Não se aplica",
+    "modalidade": "Residencial",
+    "descricao": "Martelo disponivel para venda",
+    "disponibilidade": "Venda"
+},
+{
+    "id" : 10,
+    "img": "lixadeira01.jpg",
+    "alt": "imagem da ferramenta",
+    "titulo": "Lixadeira",
+    "tensao": "220V",
+    "modalidade": "Industrial",
+    "descricao": "Lixadeira disponivel para venda",
+    "disponibilidade": "Venda"
+},
+{
+    "id" : 11,
+    "img": "lixadeira02.jpg",
+    "alt": "imagem da ferramenta",
+    "titulo": "Lixadeira",
+    "tensao": "220V",
+    "modalidade": "Industrial",
+    "descricao": "Lixadeira disponivel para venda",
+    "disponibilidade": "Venda"
+},
+{
+    "id" : 12,
+    "img": "parafuseira01.jpg",
+    "alt": "imagem da ferramenta",
+    "titulo": "Parafuseira",
+    "tensao": "220V",
+    "modalidade": "Industrial",
+    "descricao": "Lixadeira disponivel para venda",
+    "disponibilidade": "Venda"
+},
+{
+    "id" : 13,
+    "img": "serradeira01.jpg",
+    "alt": "imagem da ferramenta",
+    "titulo": "Serradeira",
+    "tensao": "220V",
+    "modalidade": "Industrial",
+    "descricao": "Serradeira disponivel para venda",
+    "disponibilidade": "Venda"
+},
+{
+    "id" : 14,
+    "img": "serradeira02.jpg",
+    "alt": "imagem da ferramenta",
+    "titulo": "Serradeira",
+    "tensao": "220V",
+    "modalidade": "Industrial",
+    "descricao": "Serradeira disponivel para venda",
+    "disponibilidade": "Venda"
+}
+]

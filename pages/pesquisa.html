@@ -33,21 +33,16 @@
       
       <div class="busca">
         
-        <input id="input-busca" placeholder="Qual ferramenta?">  
-
-        <select id="select-busca-tensao" name="tensao" id="tensao" title="Selecione a tensão (opcional)">
-          <option value="0" selected disabled>Qual tensão?</option>
-          <option value="0">Todas</option>
-          <option value="1">110V</option>
-          <option value="2">220V</option>
-          <option value="3">Não se aplica</option>
-        </select>
-        
-        <select id="select-busca-modalidade" name="modalidade" id="modalidade" title="Selecione a modalidade (opcional)">
-          <option value="0" selected disabled>Qual modalidade?</option>
-          <option value="0">Todas</option>
-          <option value="1">Doméstica</option>
-          <option value="2">Industrial</option>
+        <select id="select-ferramenta" name="ferramenta" id="ferramenta" title="Selecione a ferramenta (opcional)">
+          <option value="0" selected disabled>Qual ferramenta?</option>
+          <option value="Todas">Todas</option>
+          <option value="Caixa de Ferramentas">Caixa de Ferramentas</option>
+          <option value="Chave de Fenda">Chave de Fenda</option>
+          <option value="Furadeira">Furadeira</option>
+          <option value="Martelo">Martelo</option>
+          <option value="Lixadeira">Lixadeira</option>
+          <option value="Parafuseira">Parafuseira</option>
+          <option value="Serradeira">Serradeira</option>
         </select>
         
         <button class="btn-primary" id="btn_buscar">Buscar</button>

@@ -1,7 +1,10 @@
 const cardSection = document.getElementById('resultado-pesquisa')
-const btnBuscar = document.getElementById('btn_buscar')
 
+const selectFerramenta = document.getElementById('select-ferramenta')
+
+const btnBuscar = document.getElementById('btn_buscar')
 let json
+
 
 function cards(json){
     return `
@@ -15,7 +18,7 @@ function cards(json){
     </div>`
 }
 
-const books = async () => {
+const ferramentas = async () => {
     try{
         const response = await fetch('../mock/ferramentas/mock.json')
         if(!response.ok) throw `com o status: ${response.status}`
@@ -28,12 +31,34 @@ const books = async () => {
     }
 }
 
+ferramentas()
+
 const filter = () => {
-    let result = json.filter(function(){
-        
-    })
+
+    let jsonFilter
+
+    console.log(selectFerramenta.value)
+
+    if(selectFerramenta.value == 0 || selectFerramenta.value == "Todas"){
+        cardSection.innerHTML = "";
+        ferramentas()
+    }
+
+    if(selectFerramenta.value != 0 && selectFerramenta.value != "Todas"){
+        jsonFilter = json.filter(ferramenta => ferramenta.titulo === selectFerramenta.value)
+
+        if(jsonFilter.length > 0){
+            cardSection.innerHTML = "";
+            for (let i=0; i<=jsonFilter.length; i++){
+                cardSection.innerHTML += cards(jsonFilter[i])
+            }
+        }
+    }
 }
-books()
+
+btnBuscar.addEventListener("click", (e) =>{
+    filter() 
+})
 
 
 

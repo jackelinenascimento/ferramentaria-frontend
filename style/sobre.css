@@ -10,6 +10,7 @@
 
 .conteudo-sobre{
     margin: 20px;
+    padding-bottom: 100px;
 }
 
 .conteudo-sobre p{
@@ -19,6 +20,5 @@
 @media screen and (min-width: 601px){
     .conteudo-sobre{
         margin: 0 10%;
-        padding-bottom: 100px;
     }
 }

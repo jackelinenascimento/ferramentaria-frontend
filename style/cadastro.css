@@ -1,72 +1,14 @@
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-
-    min-height: 100vh;
-    background: #2E2E2E;
-    background-image: url('../img/background.jpg');
-    background-size: cover;
-    background-position-y: -100px ;
-}
-
-main{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-section {
-    background: #fff;
-    padding: 30px 5px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 15px;
-    max-width: 70vw;
-    max-height: 100%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-
-}
-
-section h1 {
-    padding: 40px 10px;
-    text-align: center;
-    font-size: 1.6rem;
-}
-
 fieldset { 
     border: none;
 }
-
-
 
 fieldset:nth-child(8){
     display: flex;
     padding: 15px;
 }
 
-
 fieldset {
     display: flex;
-}
-
-.container input,  select {
-    margin: 10px 10px;
-    width: calc(100% - 20px);
-    height: 70px;
-    border: none;
-    background-color: #ededed;
-    border-radius: 4px;
-    color: #333;
-    font-size: 18px;
-    font-weight: 700;
-    padding: 14px 10px 0 10px;
-
-
 }
 
 .container {
@@ -97,12 +39,12 @@ fieldset {
     
 }
 
-#btn-submit {
+button {
     margin: 40px 0;
     margin-left: 10px;
     width: calc(50% - 10px);
     height: 70px;
-    background: #00acd7;
+    background: #08558B;
     color: #fff;
     font-size: 20px;
     border-radius: 20px;
@@ -161,27 +103,6 @@ a:hover {
 
 }
 
-.three-quarters-box {
-    flex: 70%;
-    position: relative;
-}
-
-.one-quarters-box {
-    flex: 1 1 20%;
-    position: relative;
-}
-
-.half-one-quarters-box {
-    flex: 1 1 10%;
-    position: relative;
-}
-
-
-.half-box {
-    flex: 1 1 45%;
-    position: relative;
-}
-
 .spacing {
     margin-right: 2.5%;
 }
@@ -221,7 +142,5 @@ a:hover {
         margin: auto;
         margin-top: 40px;
     }
-
-
 }
 

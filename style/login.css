@@ -1,11 +1,5 @@
-
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Helvetica;
-    color: #323232;
-    border: none;    
+    border-style: none;
 }
 
 body{
@@ -68,22 +62,10 @@ input:focus{
     border-bottom: 2px solid #08558B;
 }
 
-input[type="submit"] {
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-    border: none;
-    height: 40px;
-    border-radius: 20px;
-    margin-top: 30px;
-    color: #FFF;
-    background-color: #08558B;
-    cursor: pointer;
+h1 {
+    padding: 10px;
 }
 
-input[type="submit"]:hover{
-    background-color: #08558B;
-    transition: .5s;
+.btn-registrar{ 
+    color:#04AA6D;  
 }
-
-

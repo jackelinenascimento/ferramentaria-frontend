@@ -1,14 +1,12 @@
-body {
-    margin: 0 auto;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 .container{
-    margin: 0 10% 0 10%;
+    background-color: #ffffff;
+    margin: 0px 50px;
+    padding: 0px 10px 50px 10px;
+    width: 80%;
 }
 
 main{
-    margin-top: 20vh;
+    text-align: center;
 }
 
 @media screen and (max-width: 600px) {
@@ -20,61 +18,30 @@ main{
     .logo {
         margin: 0;
         padding: 0;
-        width: 40%;
+        align-items: center;
     }
 
     .imagem-logo{
-        position: relative;
-        left: 75%;
-        width: 100%;
+        width: 250px;
     }
     
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 601px) {
     .container{
         display: flex;
-        text-align: center;
+    	justify-content: center;
+    	align-items: center;
+        padding: 50px 10px 50px 10px;
     }
-    .titulo{
-        margin: 10%;
-    }
+    
+ 
     .logo {
-        width: 70%;
         text-align: center;
     }
 
     .imagem-logo{
         position: relative;
-        top: 25%;
-        left: 25%;
-        width: 100%;
-        max-width: 200px;
+        max-width: 300px;
     }
-}
-
-h1{
-    font-size: 1.5em;    
-}
-
-h2{
-    font-size: 1em;
-}
-
-p{
-    margin-bottom: 30px;;
-}
-
-.btn-pesquisa{
-    text-decoration: none;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-    border: none;
-    height: 40px;
-    border-radius: 20px;
-    color: #FFF;
-    background-color: #08558B;
-    cursor: pointer;
-    padding: 15px;
 }

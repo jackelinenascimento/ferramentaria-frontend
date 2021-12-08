@@ -6,8 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="../style/commons.css">
     <link rel="stylesheet" href="../style/menu.css">
+    <link rel="stylesheet" href="../style/principal.css">
     <title>Ferramentaria - Principal</title>
 </head>
 
@@ -16,10 +19,9 @@
         <div class="topnav" id="myTopnav">
             <a href="./../index.html">Ferramentaria</a>
             <a href="./principal.html" class="active">Seu cadastro</a>
-            <a href="./publicaFerramenta.html">Publicar uma ferramenta</a>
             <a href="./pesquisa.html">Busque uma ferramenta</a>
             <a href="./sobre.html">Sobre Nós</a>
-            <a href="./../index.html">Sair</a>
+            <a id="btn-sair" href="javascript:void(0)">Sair</a>
             <a href="javascript:void(0)" class="icon" onclick="menu()">
                 <i class="fa fa-bars"></i>
             </a>
@@ -27,27 +29,131 @@
       </nav>
 
     <div id="main-container">
-        <h1>Seja bem-vindo!</h1>
 
-        <fieldset>
-            <h3>Olá, você precisa de ajuda para fornecer uma ferramenta
-                ou para alugar uma?
-            </h3>
+        <div class="row">
+            <div class="col-3">
 
-        </fieldset>
+                <div class="perfil">
+                    <img src="../img/usuario.png" alt="Figura Usuario" id="usuario">
 
-        <fieldset>
-            <input type="button" name="msg" value="MENSAGENS">
+                    <h2 id="usuarioLogado"></h2>
+                    <p id="emailLogado"></p>
+                    <p id="cepLogado"></p>
+                    <p id="ruaLogado"></p>
+                    <p id="complLogado"></p>                  
+                    <p id="telefoneLogado"></p>
+                    <button id="edit" class="btn-primary">Editar</button>
 
-            <input type="button" name="emprestar" value="EMPRESTAR">
+                </div>
+            </div>
+            <div class="col-9">
 
-            <input type="button" name="solicitar" value="ALUGAR">
+                <div class="anuncios">
+                   
+                    <h1>Meus anúncios</h1>
+                    <button type="button" class="btn btn-success" style="align-items:flex-end; margin-bottom: 15px;" data-toggle="modal" data-target="#myModal">Novo <i class="fa fa-plus"></i> </button>
+                                         
+                   
+                    <div class="row" id="relacao-anuncios">
+                        <div class="card" style="width: 15rem;">
+                            <img class="card-img-top" src="../mock/ferramentas/lixadeira02.jpg" alt="Imagem de capa do card">
+                            <div class="card-body">
+                              <h5 class="card-title">Lixadeira</h5>
+                              <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+                              <a href="#" class="btn btn-primary">Editar</a>
+                            </div>
+                        </div>
 
-        </fieldset>
+                    </div>
+                </div>
+                
+            </div>
 
-        <a id="btn-sair">Sair</a>
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title" id="myModalLabel">Nova ferramenta</h2>
+                        </div>
+                        <div class="modal-body">
+                            <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
 
+                                <div class="form-group row ">
+                                    <label class="control-label col-md-3 col-sm-3 ">Nome</label>
+                                    <div class="col-md-9 col-sm-9 ">
+                                        <input type="text" class="form-control" placeholder="Nome" id="nome">
+                                    </div>
+                                </div>
 
+                                <div class="form-group row">
+                                    <label class="control-label col-md-3 col-sm-3 ">Descrição <span class="required">*</span>
+                                    </label>
+                                    <div class="col-md-9 col-sm-9 ">
+                                        <textarea class="form-control" rows="3" placeholder="Descrição" id="descricao"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="control-label col-md-3 col-sm-3 ">Tensão</label>
+                                    <div class="col-md-9 col-sm-9 ">
+                                        <select class="form-control" id="tensao">
+                                            <option></option>
+                                            <option>110V</option>
+                                            <option>200V</option>
+                                            <option>Não se aplica</option>
+                                            
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="control-label col-md-3 col-sm-3 ">Modalidade</label>
+                                    <div class="col-md-9 col-sm-9 ">
+                                        <select class="form-control" id="modalidade">
+                                            <option></option>
+                                            <option>Residencial</option>
+                                            <option>Industrial</option>
+                                            <option>Outro</option>
+                                            
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label class="control-label col-md-3 col-sm-3 ">Disponibilidade</label>
+                                    <div class="col-md-9 col-sm-9 ">
+                                        <select class="form-control" id="disponibilidade">
+                                            <option></option>
+                                            <option>Aluguel</option>
+                                            <option>Venda</option>
+                                            <option>Doação</option>
+                                            
+                                        </select>
+                                    </div>
+                                </div>                     
+
+                                <div class="form-group row">
+                                    <label class="control-label col-md-3 col-sm-3 ">Imagem</label>
+                                    <div class="col-md-9 col-sm-9 ">
+                                        <div class="">
+                                            <label>
+                                                <input type="file" data-role="magic-overlay" data-target="#pictureBtn" data-edit="insertImage" id="imagem"/>
+                                            </label>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="ln_solid"></div>
+                                <div class="form-group">
+                                    <div class="col-md-9 col-sm-9 offset-md-3 text-center">
+                                        <button type="reset" class="btn btn-primary">Reset</button>
+                                        <button type="button" class="btn btn-success" onclick="adicionarFerramenta();">Submit</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- #myModal 59 -->
+        </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -61,6 +167,7 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script src="../script/commons.js"></script>
     <script src="../script/principal.js"></script>
+    <script src="../script/publicaFerramenta.js"></script>
 </body>
 
 </html>

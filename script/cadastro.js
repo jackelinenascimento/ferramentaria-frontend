@@ -108,7 +108,7 @@ function construirUsuarioCadastrar(){
 
     novoUsuario.endereco = enderecoUsuario;
 
-    telefoneUsario.ddd = telefone.value.substr(1,3).trim();
+    telefoneUsario.ddd = telefone.value.substr(1,2).trim();
     telefoneUsario.numero = telefone.value.substr(4,11).trim();
 
     novoUsuario.telefone = telefoneUsario;

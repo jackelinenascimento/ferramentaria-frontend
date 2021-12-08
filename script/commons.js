@@ -5,6 +5,7 @@ const API_AUTH = "auth"
 const API_USUARIOS = "usuarios"
 const CLIENT_PRINCIPAL = "pages/principal.html"
 const CLIENT_LOGIN = "pages/login.html"
+const CLIENT_HOME = "index.html"
 
 //modal
 $('#myModal').on('shown.bs.modal', function () {

@@ -33,7 +33,7 @@ function enviar(){
             status = res.status;
             return res.json();
         })
-        .then(({ token}) => {
+        .then(({token}) => {
             if(status == 200){
                 localStorage.setItem("email", email.value)
                 localStorage.setItem("token", token)
